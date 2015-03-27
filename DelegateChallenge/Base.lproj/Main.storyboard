@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7525" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7516"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DelegateChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,90 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nkf-oV-euo">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xq3-0A-qQE">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7U-Ct-602">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                            </switch>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZr-86-kuk">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BZr-86-kuk" firstAttribute="top" secondItem="z7U-Ct-602" secondAttribute="top" id="9dm-wX-hVL"/>
+                            <constraint firstItem="z7U-Ct-602" firstAttribute="leading" secondItem="BZr-86-kuk" secondAttribute="trailing" constant="8" symbolic="YES" id="9pU-gn-Pws"/>
+                            <constraint firstAttribute="centerX" secondItem="xq3-0A-qQE" secondAttribute="centerX" id="D1X-zJ-grL"/>
+                            <constraint firstItem="nkf-oV-euo" firstAttribute="trailing" secondItem="z7U-Ct-602" secondAttribute="trailing" id="D9s-6v-9n3"/>
+                            <constraint firstItem="nkf-oV-euo" firstAttribute="leading" secondItem="BZr-86-kuk" secondAttribute="leading" id="HAA-F3-5DJ"/>
+                            <constraint firstItem="BZr-86-kuk" firstAttribute="top" secondItem="xq3-0A-qQE" secondAttribute="bottom" constant="8" symbolic="YES" id="W8O-GE-CkG"/>
+                            <constraint firstAttribute="centerX" secondItem="nkf-oV-euo" secondAttribute="centerX" id="cLq-at-Fp4"/>
+                            <constraint firstItem="nkf-oV-euo" firstAttribute="leading" secondItem="xq3-0A-qQE" secondAttribute="leading" id="fyw-sp-Sdw"/>
+                            <constraint firstItem="nkf-oV-euo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="jVD-Rh-Bx5"/>
+                            <constraint firstItem="xq3-0A-qQE" firstAttribute="top" secondItem="nkf-oV-euo" secondAttribute="bottom" constant="8" symbolic="YES" id="lcS-tp-bXM"/>
+                            <constraint firstItem="nkf-oV-euo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="taW-BS-cDV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nkf-oV-euo"/>
+                                <exclude reference="xq3-0A-qQE"/>
+                                <exclude reference="z7U-Ct-602"/>
+                                <exclude reference="BZr-86-kuk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="D9s-6v-9n3"/>
+                                <exclude reference="HAA-F3-5DJ"/>
+                                <exclude reference="cLq-at-Fp4"/>
+                                <exclude reference="fyw-sp-Sdw"/>
+                                <exclude reference="jVD-Rh-Bx5"/>
+                                <exclude reference="taW-BS-cDV"/>
+                                <exclude reference="D1X-zJ-grL"/>
+                                <exclude reference="lcS-tp-bXM"/>
+                                <exclude reference="9dm-wX-hVL"/>
+                                <exclude reference="W8O-GE-CkG"/>
+                                <exclude reference="9pU-gn-Pws"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nkf-oV-euo"/>
+                                <include reference="xq3-0A-qQE"/>
+                                <include reference="z7U-Ct-602"/>
+                                <include reference="BZr-86-kuk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="D9s-6v-9n3"/>
+                                <include reference="HAA-F3-5DJ"/>
+                                <include reference="cLq-at-Fp4"/>
+                                <include reference="fyw-sp-Sdw"/>
+                                <include reference="jVD-Rh-Bx5"/>
+                                <include reference="taW-BS-cDV"/>
+                                <include reference="D1X-zJ-grL"/>
+                                <include reference="lcS-tp-bXM"/>
+                                <include reference="9dm-wX-hVL"/>
+                                <include reference="W8O-GE-CkG"/>
+                                <include reference="9pU-gn-Pws"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="zipCodeTextField" destination="nkf-oV-euo" id="Opc-VG-oy7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="379.5" y="337"/>
         </scene>
     </scenes>
 </document>
