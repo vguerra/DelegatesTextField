@@ -30,4 +30,9 @@ class ZipCodeTextFieldDelegate : NSObject, UITextFieldDelegate {
             return false
         }
     }
+    
+    // We dont end edit session unless we have a valid ZipCode
+    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+        return (count(textField.text) == fieldMaxLength)
+    }
 }
