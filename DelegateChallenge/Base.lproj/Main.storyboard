@@ -27,8 +27,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7U-Ct-602">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z7U-Ct-602">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchEditing:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Rf7-Pl-HZg"/>
+                                </connections>
                             </switch>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BZr-86-kuk">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -95,6 +98,8 @@
                     </view>
                     <connections>
                         <outlet property="cashTextField" destination="xq3-0A-qQE" id="NRz-mV-PCQ"/>
+                        <outlet property="lockTextFieldSwitch" destination="z7U-Ct-602" id="qHc-aI-vgy"/>
+                        <outlet property="lockedTextField" destination="BZr-86-kuk" id="AH1-yi-hxh"/>
                         <outlet property="zipCodeTextField" destination="nkf-oV-euo" id="Opc-VG-oy7"/>
                     </connections>
                 </viewController>
