@@ -18,8 +18,15 @@ class ZipCodeTextFieldDelegate : NSObject, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
+        let oldTextLength = count(textField.text)
+        // verifying that the range is valid (needed when undoing a privous invalidated paste)
+        if (oldTextLength < range.length + range.location ) {
+            return false
+        }
+        
         // If we reached max lenght and it is not backspace.
-        if count(textField.text) == fieldMaxLength && count(string) != 0 {
+        let insertedStringCount = count(string)
+        if count(textField.text) + insertedStringCount > fieldMaxLength {
             return false
         }
         
