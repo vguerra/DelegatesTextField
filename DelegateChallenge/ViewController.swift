@@ -11,13 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var zipCodeTextField: UITextField!
+    @IBOutlet weak var cashTextField: UITextField!
 
     let zipCodeDelegate = ZipCodeTextFieldDelegate()
+    let cashDelegate = CashTextFieldDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         zipCodeTextField.delegate = zipCodeDelegate
+        cashTextField.delegate = cashDelegate
     }
 
 

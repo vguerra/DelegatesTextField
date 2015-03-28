@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B43164CB1AC5E202001C2C62 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43164CA1AC5E202001C2C62 /* ZipCodeTextFieldDelegate.swift */; };
+		B43164CD1AC5F309001C2C62 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43164CC1AC5F309001C2C62 /* CashTextFieldDelegate.swift */; };
 		B4E8CF781AC4CD3500B714D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8CF771AC4CD3500B714D7 /* AppDelegate.swift */; };
 		B4E8CF7A1AC4CD3500B714D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8CF791AC4CD3500B714D7 /* ViewController.swift */; };
 		B4E8CF7D1AC4CD3500B714D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E8CF7B1AC4CD3500B714D7 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		B43164CA1AC5E202001C2C62 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		B43164CC1AC5F309001C2C62 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		B4E8CF721AC4CD3500B714D7 /* DelegateChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E8CF761AC4CD3500B714D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4E8CF771AC4CD3500B714D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				B4E8CF801AC4CD3500B714D7 /* LaunchScreen.xib */,
 				B4E8CF751AC4CD3500B714D7 /* Supporting Files */,
 				B43164CA1AC5E202001C2C62 /* ZipCodeTextFieldDelegate.swift */,
+				B43164CC1AC5F309001C2C62 /* CashTextFieldDelegate.swift */,
 			);
 			path = DelegateChallenge;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E8CF7A1AC4CD3500B714D7 /* ViewController.swift in Sources */,
+				B43164CD1AC5F309001C2C62 /* CashTextFieldDelegate.swift in Sources */,
 				B43164CB1AC5E202001C2C62 /* ZipCodeTextFieldDelegate.swift in Sources */,
 				B4E8CF781AC4CD3500B714D7 /* AppDelegate.swift in Sources */,
 			);
